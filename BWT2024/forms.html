@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Запись на урок</title>
+    <style>
+        .one {
+        background-color: #87CEFA;
+        border-color: #FFB6C1;
+        border-width: 5px;
+        margin-top: 20px;
+        margin-right: 60px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 10px;
+        padding-right: 150px;
+        clear: both;
+        line-height: 25px;
+        }
+        .two {
+        background-color: #87CEFA;
+        border-color: #FFB6C1;
+        border-width: 5px;
+        margin-top: 20px;
+        margin-right: 60px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 10px;
+        padding-right: 150px;
+        clear: both;
+        line-height: 25px;
+        }
+        .main {
+        font-size: 26px;
+        text-decoration: none;
+        color: #800080;
+        }
+        .navbar {
+        width: 100%;
+        height: 55px;
+        box-shadow: 0 4px rgba(0, 0, 0, .1);
+        }
+        .navbar .container {
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .navbar-menu li {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        }
+        .navbar-menu li {
+        display: inline-block;
+        }
+        .navbar-menu li a{
+        display: inline-block;
+        color: #800080;
+        text-decoration: none;
+        padding: 10px;
+        opacity: 0.6;
+        transition: all .07s ease-in-out;
+        }
+        .navbar-menu li a:hover {
+        opacity: 1;
+        }
+        .navbar-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        }
+        .callback {
+        margin-left: 30px;
+        margin-top: 14px;
+        color: #800080;
+        padding: 10px 30px;
+        }
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+        <div class="container">
+            <a href="Navigation.html" class="main">Главная</a>
+
+            <div class="navbar-wrap">
+            <ul class="navbar-menu">
+                <li><a href="Extra.html">Другие задания</a></li>
+                <li><a href="Hermitage.html">Шедевры Эрмитажа</a></li>
+                <li><a href="Louvre.html">Шедевры Лувра</a></li>
+                <li><a href="Prado.html">Шедевры Прадо</a></li>
+            </ul>
+
+            <a href="forms.html" class="callback">Запись на урок</a>
+            </div>
+        </div>
+</nav>
+
+
+
+<h2>Обратная связь</h2>
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <p><input type="hidden"  name="q" value="search"></p>
+	<fieldset class="one">
+		<legend><b>Контактная информация</b></legend>
+		<p><label>Имя</label><input type="text" name="first_name" size="25"></p>
+        <p><label>Фамилия</label><input type="text" name="last_name" size="25"></p>
+		<p><label>Телефон</label><input type="text" name="tel" size="30"></p>
+		<p><label>Email</label><input type="email" name="email" size="30"></p>
+		<p><label>Дата посещения</label><input type="date" name="date" size="30"></p>
+    </fieldset>
+
+    <p>
+        <input type="Reset"  name="Reset"  value="Сбросить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+</form>
+
+<h2>Закажите урок-введение в музеи мира</h2>
+<form action="https://www.bing.com/search?" id="Enter" name="Enter" target="_blank">
+    <p><input type="hidden"  name="q" value="search"></p>
+    <fieldset class="two">
+        <legend><b>Подробнее о себе</b></legend>
+        <p>Музей:
+            <input type="Radio" name="place" value="Louvre">Лувр
+            <input type="Radio" name="place" value="Hermitage" checked >Эрмитаж
+            <input type="Radio" name="place" value="Prado">Прадо
+        </p>
+
+        <p>Любимы эпоха живописи:
+            <input type="Checkbox" name="genre" value="средневековье">Средневековье
+            <input type="Checkbox"  name="genre" value="ренессанс">Ренессанс
+            <input type="Checkbox" name="genre" value="барокко">Барокко
+            <input type="Checkbox" name="genre" value="классицизм">Классицизм
+            <input type="Checkbox" name="genre" value="романтизм">Романтизм
+        </p>
+
+        <p>Готовность погружаться в историю искусств:
+            <input type="number" size="3" name="num" min="1" max="10" value="1">
+        </p>
+
+        <p> Пожелания:
+            <br>
+            <TEXTAREA cols=40 rows=4 name="textarea" ></TEXTAREA>
+        </p>
+
+        <p>Пароль: <input type="Password" name="password" size=9  value="123"></p>
+    </fieldset>
+
+    <input type="hidden" name="function"  value="page">
+    <input type="hidden" name="page_id"  value="3">
+
+    <p>
+        <input type="Reset"  name="Reset"  value="Сбросить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+</form>
+
+</body>
+</html>
